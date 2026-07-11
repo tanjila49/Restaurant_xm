@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Icons CDN Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Bootstrap css cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- header top -->
+    <section class="navbar-top bg-light">
+        <div class="container nav-top">
+            <div class="row">
+                <div class="col-6">
+                    <div class="top-nav text-md-start pt-1">
+                        <p class="top-heading text-dark"><i class="fa-solid fa-envelope"
+                                style="color: rgb(80, 208, 247);"></i><strong>
+                                Email:</strong> info123@gmail.com</p>
+                        <p class="top-heading text-dark"><i class="fa-solid fa-phone"
+                                style="color: rgb(80, 208, 247);"></i><strong>
+                                Phone:</strong> +88 01234567890</p>
+                        <p class="top-heading"><i class="fa-brands fa-facebook-f" style="color: rgb(64, 107, 226);"></i>
+                        </p>
+                        <p class="top-heading"><i class="fa-brands fa-x-twitter" style="color: rgb(64, 107, 226);"></i>
+                        </p>
+                        <p class="top-heading"><i class="fa-brands fa-youtube" style="color: rgb(64, 107, 226);"></i>
+                        </p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-6 top-nav-right text-md-end">
+                    <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-right-to-bracket"
+                            style="color: (80, 208, 247);"></i> Registration</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- navigation section -->
+    <nav class="navbar navbar-expand-lg bg-info sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-dark pb-2" style="font-size: xx-large;" href="home.html"><i
+                    class="fa-solid fa-bowl-rice" style="color: rgb(255, 255, 255); font-size: 50px;"></i>Delicious
+                Bites</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="font-weight: 900;" aria-current="page"
+                            href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dish detail.html">Dish Detail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservation.html">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Breadcrumb Section -->
+    <nav class="bg-light p-3 rounded mb-4" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0 align-items-center justify-content-center">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Menu</li>
+        </ol>
+    </nav>
+    <!----------------- Menu Section ------------------>
+    <section class="py-5 bg-light">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Food Menu</h2>
+                <p class="text-muted">
+                    Explore our delicious categories and choose your favorite dishes.
+                </p>
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- Left Panel: Food Categories Accordion -->
+                <div class="col-lg-6">
+
+                    <div class="mb-4">
+                        <h2 class="fw-bold">Food Categories</h2>
+                        <p class="text-muted">
+                            Explore our delicious food categories and discover your favorite dishes.
+                        </p>
+                    </div>
+
+                    <div class="accordion" id="foodCategoryAccordion">
+
+                        <!-- Starters -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#starters">
+
+                                    <i class="fa-solid fa-bowl-food text-info me-2"></i>
+                                    Starters
+                                </button>
+                            </h2>
+
+                            <div id="starters" class="accordion-collapse collapse show"
+                                data-bs-parent="#foodCategoryAccordion">
+
+                                <div class="accordion-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            Chicken Wings - $8.99
+                                        </li>
+                                        <li class="list-group-item">
+                                            Garlic Bread - $5.50
+                                        </li>
+                                        <li class="list-group-item">
+                                            Vegetable Spring Rolls - $7.00
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Main Course -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#mainCourse">
+
+                                    <i class="fa-solid fa-utensils text-info me-2"></i>
+                                    Main Course
+                                </button>
+
+                            </h2>
+
+                            <div id="mainCourse" class="accordion-collapse collapse"
+                                data-bs-parent="#foodCategoryAccordion">
+
+                                <div class="accordion-body">
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            Grilled Steak - $24.99
+                                        </li>
+                                        <li class="list-group-item">
+                                            Special Pasta - $16.99
+                                        </li>
+                                        <li class="list-group-item">
+                                            Chicken Biryani - $12.99
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- Desserts -->
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#desserts">
+
+                                    <i class="fa-solid fa-cake-candles text-info me-2"></i>
+                                    Desserts
+                                </button>
+
+                            </h2>
+
+                            <div id="desserts" class="accordion-collapse collapse"
+                                data-bs-parent="#foodCategoryAccordion">
+
+                                <div class="accordion-body">
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            Chocolate Cake - $6.50
+                                        </li>
+                                        <li class="list-group-item">
+                                            Ice Cream Sundae - $5.99
+                                        </li>
+                                        <li class="list-group-item">
+                                            Fruit Cheesecake - $7.50
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Drinks -->
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#drinks">
+
+                                    <i class="fa-solid fa-mug-hot text-info me-2"></i>
+                                    Drinks
+                                </button>
+
+                            </h2>
+
+                            <div id="drinks" class="accordion-collapse collapse"
+                                data-bs-parent="#foodCategoryAccordion">
+
+                                <div class="accordion-body">
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            Fresh Juice - $4.99
+                                        </li>
+                                        <li class="list-group-item">
+                                            Coffee - $3.50
+                                        </li>
+                                        <li class="list-group-item">
+                                            Special Mocktail - $6.99
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Right Panel: Menu Cards -->
+                <div class="col-lg-6">
+
+                    <div class="row g-4">
+
+
+                        <!-- Card 1 -->
+                        <div class="col-md-6">
+                            <div class="card shadow border-0 h-100">
+
+                                <img src="images/pizza.jpg" class="card-img-top" alt="Pizza">
+
+                                <div class="card-body text-center">
+
+                                    <h5 class="fw-bold">
+                                        Italian Cheese Pizza
+                                    </h5>
+
+                                    <h5 class="text-danger fw-bold">
+                                        $14.99
+                                    </h5>
+
+                                    <button class="btn btn-info text-white">
+                                        <i class="fa-solid fa-cart-shopping me-2"></i>
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <!-- Card 2 -->
+                        <div class="col-md-6">
+
+                            <div class="card shadow border-0 h-100">
+
+                                <img src="images/burger.jpg" class="card-img-top" alt="Burger">
+
+                                <div class="card-body text-center">
+
+                                    <h5 class="fw-bold">
+                                        Special Burger
+                                    </h5>
+
+                                    <h5 class="text-danger fw-bold">
+                                        $12.50
+                                    </h5>
+
+                                    <button class="btn btn-info text-white">
+                                        <i class="fa-solid fa-cart-shopping me-2"></i>
+                                        Add to Cart
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Card 3 -->
+                        <div class="col-md-6">
+
+                            <div class="card shadow border-0 h-100">
+
+                                <img src="images/pasta.jpg" class="card-img-top" alt="Pasta">
+
+                                <div class="card-body text-center">
+
+                                    <h5 class="fw-bold">
+                                        Creamy Chicken Pasta
+                                    </h5>
+
+                                    <h5 class="text-danger fw-bold">
+                                        $16.99
+                                    </h5>
+
+                                    <button class="btn btn-info text-white">
+                                        <i class="fa-solid fa-cart-shopping me-2"></i>
+                                        Order Now
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Card 4 -->
+                        <div class="col-md-6">
+
+                            <div class="card shadow border-0 h-100">
+
+                                <img src="images/steak.jpg" class="card-img-top" alt="Steak">
+
+                                <div class="card-body text-center">
+
+                                    <h5 class="fw-bold">
+                                        Grilled Steak
+                                    </h5>
+
+                                    <h5 class="text-danger fw-bold">
+                                        $24.99
+                                    </h5>
+
+                                    <button class="btn btn-info text-white">
+                                        <i class="fa-solid fa-cart-shopping me-2"></i>
+                                        Order Now
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+
+            <div class="row g-4">
+
+                <!-- Restaurant Info -->
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="fw-bold mb-3">
+                        <i class="fa-solid fa-bowl-rice text-info me-2"></i>
+                        Delicious Bites
+                    </h3>
+
+                    <p class="text-white-50">
+                        We serve delicious food prepared with fresh ingredients and passion.
+                        Experience great taste, warm hospitality, and unforgettable dining moments.
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot text-info me-2"></i>
+                        123 Food Street, Dhaka, Bangladesh
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-phone text-info me-2"></i>
+                        +88 01234567890
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-envelope text-info me-2"></i>
+                        info@deliciousbites.com
+                    </p>
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="index.html" class="text-white-50 text-decoration-none">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="menu.html" class="text-white-50 text-decoration-none">
+                                Our Menu
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="reservation.html" class="text-white-50 text-decoration-none">
+                                Reservation
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="about.html" class="text-white-50 text-decoration-none">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html" class="text-white-50 text-decoration-none">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Opening Hours -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Opening Hours</h5>
+
+                    <p class="text-white-50 mb-2">
+                        <strong class="text-white">Monday - Friday:</strong><br>
+                        10:00 AM - 10:00 PM
+                    </p>
+
+                    <p class="text-white-50 mb-2">
+                        <strong class="text-white">Saturday:</strong><br>
+                        11:00 AM - 11:30 PM
+                    </p>
+
+                    <p class="text-white-50">
+                        <strong class="text-white">Sunday:</strong><br>
+                        12:00 PM - 09:00 PM
+                    </p>
+                </div>
+
+
+                <!-- Social Media -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Follow Us</h5>
+
+                    <p class="text-white-50">
+                        Stay connected with us for latest dishes and offers.
+                    </p>
+
+                    <div>
+                        <a href="#" class="btn btn-outline-info rounded-circle me-2">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="btn btn-outline-info rounded-circle me-2">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                        <a href="#" class="btn btn-outline-info rounded-circle me-2">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="btn btn-outline-info rounded-circle">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <hr class="mt-4 text-white-50">
+
+
+            <!-- Copyright -->
+            <div class="text-center text-white-50">
+                <p class="mb-0">
+                    &copy; 2026 Delicious Bites. All Rights Reserved.
+                    Crafted with passion for a memorable dining experience.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap css cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

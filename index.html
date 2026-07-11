@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Icons CDN Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Bootstrap css cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- header top -->
+    <section class="navbar-top bg-light">
+        <div class="container nav-top">
+            <div class="row">
+                <div class="col-6">
+                    <div class="top-nav text-md-start pt-1">
+                        <p class="top-heading text-dark"><i class="fa-solid fa-envelope"
+                                style="color: rgb(80, 208, 247);"></i><strong>
+                                Email:</strong> info123@gmail.com</p>
+                        <p class="top-heading text-dark"><i class="fa-solid fa-phone"
+                                style="color: rgb(80, 208, 247);"></i><strong>
+                                Phone:</strong> +88 01234567890</p>
+                        <p class="top-heading"><i class="fa-brands fa-facebook-f" style="color: rgb(64, 107, 226);"></i>
+                        </p>
+                        <p class="top-heading"><i class="fa-brands fa-x-twitter" style="color: rgb(64, 107, 226);"></i>
+                        </p>
+                        <p class="top-heading"><i class="fa-brands fa-youtube" style="color: rgb(64, 107, 226);"></i>
+                        </p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-6 top-nav-right text-md-end">
+                    <button type="button" class="btn btn-outline-primary"><i class="fa-solid fa-right-to-bracket"
+                            style="color: (80, 208, 247);"></i> Registration</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- navigation section -->
+    <nav class="navbar navbar-expand-lg bg-info sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-dark pb-2" style="font-size: xx-large;" href="home.html"><i
+                    class="fa-solid fa-bowl-rice" style="color: rgb(255, 255, 255); font-size: 50px;"></i>Delicious Bites</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="font-weight: 900;" aria-current="page"
+                            href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dish detail.html">Dish Detail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservation.html">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="asset/img/slide3.jpg" class="d-block w-100" alt="..." height="500px">
+                <div class="carousel-caption d-none d-md-block mb-5 text-dark">
+                    <h5>Software Development Company</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    <button type="button" class="btn btn-success">Book A Table</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="asset/img/slide2.jpg" class="d-block w-100" alt="..." height="500px">
+                <div class="carousel-caption d-none d-md-block mb-5 text-dark">
+                    <h5>Software Development Company</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    <button type="button" class="btn btn-success">Book A Table</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="asset/img/slide1.jpg" class="d-block w-100" alt="..." height="500px">
+                <div class="carousel-caption d-none d-md-block mb-5 text-dark">
+                    <h5>Software Development Company</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    <button type="button" class="btn btn-success">Book A Table</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Special Dishes Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Special Dishes</h2>
+                <p class="text-muted">
+                    Taste our chef's most loved dishes, prepared with fresh ingredients and authentic flavors.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Dish 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow border-0">
+                        <img src="asset/img/Grilled Chicken.jpg" class="card-img-top" alt="Grilled Chicken">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Grilled Chicken</h4>
+                            <p class="card-text">
+                                Tender grilled chicken served with fresh vegetables and our signature sauce.
+                            </p>
+                            <h5 class="text-danger fw-bold">Tk. 1800</h5>
+                        </div>
+                        <div class="card-footer bg-white border-0 text-center pb-4">
+                            <a href="#" class="btn btn-info text-white px-4">
+                                <i class="fa-solid fa-cart-shopping me-2"></i>Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow border-0">
+                        <img src="asset/img/Creamy Pasta.jpg" class="card-img-top" height="238px" alt="Creamy Pasta">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Creamy Pasta</h4>
+                            <p class="card-text">
+                                Italian-style creamy pasta topped with parmesan cheese and fresh herbs.
+                            </p>
+                            <h5 class="text-danger fw-bold">Tk. 1500</h5>
+                        </div>
+                        <div class="card-footer bg-white border-0 text-center pb-4">
+                            <a href="#" class="btn btn-info text-white px-4">
+                                <i class="fa-solid fa-cart-shopping me-2"></i>Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dish 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow border-0">
+                        <img src="asset/img/Classic Burger.jpg" class="card-img-top" height="238px"
+                            alt="Classic Burger">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Classic Burger</h4>
+                            <p class="card-text">
+                                Juicy beef burger with cheddar cheese, crispy fries, and fresh salad.
+                            </p>
+                            <h5 class="text-danger fw-bold">Tk. 1200</h5>
+                        </div>
+                        <div class="card-footer bg-white border-0 text-center pb-4">
+                            <a href="#" class="btn btn-info text-white px-4">
+                                <i class="fa-solid fa-cart-shopping me-2"></i>Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!---------------- Chef's Recommendation Section ----------------->
+    <section class="py-5 bg-white">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <i class="fa-solid fa-user-chef text-info" style="font-size: 45px;"></i>
+                <h2 class="fw-bold mt-3">Chef's Recommendation</h2>
+                <p class="text-muted">
+                    Our chef's specially selected meals, prepared with passion and the finest ingredients.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Featured Meal 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow h-100">
+                        <img src="asset/img/Italian Special Pasta.jpg" class="card-img-top" alt="Chef Special Pasta">
+
+                        <div class="card-body text-center">
+                            <span class="badge bg-info mb-2">Chef Special</span>
+                            <h4 class="fw-bold">Italian Special Pasta</h4>
+                            <p class="text-muted">
+                                Handmade pasta with creamy sauce, fresh herbs, and authentic Italian flavors.
+                            </p>
+
+                            <h5 class="text-danger fw-bold">Tk. 1699</h5>
+
+                            <a href="#" class="btn btn-outline-info mt-2">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Featured Meal 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow h-100">
+                        <img src="asset/img/Premium Grilled Steak.jpg" height="265px" class="card-img-top"
+                            alt="Grilled Steak">
+
+                        <div class="card-body text-center">
+                            <span class="badge bg-warning text-dark mb-2">Recommended</span>
+                            <h4 class="fw-bold">Premium Grilled Steak</h4>
+                            <p class="text-muted">
+                                Juicy grilled steak served with roasted vegetables and special chef sauce.
+                            </p>
+
+                            <h5 class="text-danger fw-bold">Tk. 2499</h5>
+
+                            <a href="#" class="btn btn-outline-info mt-2">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Featured Meal 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow h-100">
+                        <img src="asset/img/Seafood Platter.jpg" height="265px" class="card-img-top"
+                            alt="Seafood Platter">
+
+                        <div class="card-body text-center">
+                            <span class="badge bg-success mb-2">Chef Choice</span>
+                            <h4 class="fw-bold">Seafood Platter</h4>
+                            <p class="text-muted">
+                                Fresh seafood combination prepared with our chef's secret recipe.
+                            </p>
+
+                            <h5 class="text-danger fw-bold">Tk. 2250</h5>
+
+                            <a href="#" class="btn btn-outline-info mt-2">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!----------------- Customer Testimonial Section ------------------->
+    <section class="py-5 bg-light">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <i class="fa-solid fa-comments text-info" style="font-size: 45px;"></i>
+                <h2 class="fw-bold mt-3">Customer Testimonials</h2>
+                <p class="text-muted">
+                    See what our valued customers say about their dining experience.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Review Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow border-0 h-100 text-center">
+                        <div class="card-body p-4">
+
+                            <h5 class="fw-bold">John Smith</h5>
+
+                            <div class="text-warning mb-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="text-muted">
+                                "Amazing food and excellent service. The atmosphere was beautiful
+                                and the dishes were full of flavor."
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Review Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow border-0 h-100 text-center">
+                        <div class="card-body p-4">
+
+                            <h5 class="fw-bold">Sarah Wilson</h5>
+
+                            <div class="text-warning mb-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <p class="text-muted">
+                                "The chef's special dishes were outstanding. Friendly staff
+                                and a perfect place for family dinners."
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Review Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow border-0 h-100 text-center">
+                        <div class="card-body p-4">
+
+                            <h5 class="fw-bold">Michael Brown</h5>
+
+                            <div class="text-warning mb-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+
+                            <p class="text-muted">
+                                "A wonderful restaurant with delicious meals. I will definitely
+                                visit again with my friends."
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Newsletter Subscription Section -->
+    <section class="py-5 mb-5 bg-info">
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+
+                    <div class="text-white">
+
+                        <i class="fa-solid fa-envelope-open-text" style="font-size:45px;"></i>
+
+                        <h2 class="fw-bold mt-3">
+                            Subscribe to Our Newsletter
+                        </h2>
+
+                        <p class="mb-4">
+                            Get the latest updates, special offers, new dishes, and exclusive
+                            restaurant deals directly in your inbox.
+                        </p>
+
+                        <!-- Newsletter Form -->
+                        <form class="row g-2 justify-content-center">
+
+                            <div class="col-md-8">
+                                <input type="email" class="form-control form-control-lg"
+                                    placeholder="Enter your email address">
+                            </div>
+
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-dark btn-lg w-100">
+                                    <i class="fa-solid fa-paper-plane me-2"></i>
+                                    Subscribe
+                                </button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+
+            <div class="row g-4">
+
+                <!-- Restaurant Info -->
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="fw-bold mb-3">
+                        <i class="fa-solid fa-bowl-rice text-info me-2"></i>
+                        Delicious Bites
+                    </h3>
+
+                    <p class="text-white-50">
+                        We serve delicious food prepared with fresh ingredients and passion.
+                        Experience great taste, warm hospitality, and unforgettable dining moments.
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot text-info me-2"></i>
+                        123 Food Street, Dhaka, Bangladesh
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-phone text-info me-2"></i>
+                        +88 01234567890
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-envelope text-info me-2"></i>
+                        info@deliciousbites.com
+                    </p>
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="index.html" class="text-white-50 text-decoration-none">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="menu.html" class="text-white-50 text-decoration-none">
+                                Our Menu
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="reservation.html" class="text-white-50 text-decoration-none">
+                                Reservation
+                            </a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="about.html" class="text-white-50 text-decoration-none">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html" class="text-white-50 text-decoration-none">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- Opening Hours -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Opening Hours</h5>
+
+                    <p class="text-white-50 mb-2">
+                        <strong class="text-white">Monday - Friday:</strong><br>
+                        10:00 AM - 10:00 PM
+                    </p>
+
+                    <p class="text-white-50 mb-2">
+                        <strong class="text-white">Saturday:</strong><br>
+                        11:00 AM - 11:30 PM
+                    </p>
+
+                    <p class="text-white-50">
+                        <strong class="text-white">Sunday:</strong><br>
+                        12:00 PM - 09:00 PM
+                    </p>
+                </div>
+
+
+                <!-- Social Media -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Follow Us</h5>
+
+                    <p class="text-white-50">
+                        Stay connected with us for latest dishes and offers.
+                    </p>
+
+                    <div>
+                        <a href="#" class="btn btn-outline-info rounded-circle me-2">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="btn btn-outline-info rounded-circle me-2">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                        <a href="#" class="btn btn-outline-info rounded-circle me-2">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" class="btn btn-outline-info rounded-circle">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <hr class="mt-4 text-white-50">
+
+
+            <!-- Copyright -->
+            <div class="text-center text-white-50">
+                <p class="mb-0">
+                    &copy; 2026 Delicious Bites. All Rights Reserved.
+                    Crafted with passion for a memorable dining experience.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap css cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
