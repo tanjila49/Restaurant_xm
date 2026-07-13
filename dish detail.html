@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <!-- header top hello Bangladesh-->
+    <!-- header top -->
     <section class="navbar-top bg-light">
         <div class="container nav-top">
             <div class="row">
@@ -91,100 +91,334 @@
             <li class="breadcrumb-item active" aria-current="page">Dish Detail</li>
         </ol>
     </nav>
-    <!------------------------- dish image zoom section ----------------------->
-    <div class="text-center mb-5">
-        <h2 class="fw-bold">Dish Images</h2>
-        <p class="text-muted">
-            Taste our chef's most loved dishes, prepared with fresh ingredients and authentic flavors.
-        </p>
+    <!---------------------- dish image zoom section --------------------->
+    <!----------------------- dish information ----------------------->
+    <!-- Bootstrap 5 Dish Details Section -->
+    <div class="container py-5">
+
+        <!-- Dish 1 -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-4">
+                <!-- Section Heading -->
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Dish Images</h2>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <!-- Section Heading -->
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Dish Information</h2>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <img src="asset/img/dish 1.jpg" class="img-fluid w-100 zoom-img rounded" alt="">
+            </div>
+
+            <div class="col-md-8">
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between">
+                            <h4 class="fw-bold">Grilled Chicken Salad</h4>
+                            <h4 class="text-danger">$18.99</h4>
+                        </div>
+
+                        <p class="text-muted mb-2">
+                            <i class="fa-solid fa-bowl-food text-success me-2"></i>
+                            Chicken, Lettuce, Tomato, Parmesan, Lemon Dressing
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="input-group" style="width:130px;">
+                                <button class="btn btn-outline-secondary">-</button>
+                                <input type="text" class="form-control text-center" value="1">
+                                <button class="btn btn-outline-secondary">+</button>
+                            </div>
+
+                            <button class="btn btn-danger">
+                                <i class="fa-solid fa-cart-shopping me-2"></i>Order Now
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dish 2 -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-4">
+                <img src="asset/img/dish 2.jpg" class="img-fluid w-100 zoom-img rounded" alt="">
+            </div>
+
+            <div class="col-md-8">
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between">
+                            <h4 class="fw-bold">Spicy Pasta</h4>
+                            <h4 class="text-danger">$14.50</h4>
+                        </div>
+
+                        <p class="text-muted mb-2">
+                            <i class="fa-solid fa-pepper-hot text-danger me-2"></i>
+                            Pasta, Garlic, Chili Flakes, Olive Oil, Cheese
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="input-group" style="width:130px;">
+                                <button class="btn btn-outline-secondary">-</button>
+                                <input type="text" class="form-control text-center" value="1">
+                                <button class="btn btn-outline-secondary">+</button>
+                            </div>
+
+                            <button class="btn btn-danger">
+                                <i class="fa-solid fa-cart-shopping me-2"></i>Order Now
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Dish 3 -->
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <img src="asset/img/dish 3.jpg" class="img-fluid w-100 zoom-img rounded" alt="">
+            </div>
+
+            <div class="col-md-8">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between">
+                            <h4 class="fw-bold">Beef Burger Deluxe</h4>
+                            <h4 class="text-danger">$12.99</h4>
+                        </div>
+
+                        <p class="text-muted mb-2">
+                            <i class="fa-solid fa-burger text-warning me-2"></i>
+                            Beef Patty, Cheese, Lettuce, Onion, Tomato, Sauce
+                        </p>
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="input-group" style="width:130px;">
+                                <button class="btn btn-outline-secondary">-</button>
+                                <input type="text" class="form-control text-center" value="1">
+                                <button class="btn btn-outline-secondary">+</button>
+                            </div>
+
+                            <button class="btn btn-danger">
+                                <i class="fa-solid fa-cart-shopping me-2"></i>Order Now
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <!----------------- Dish Information - Right Panel ------------------->
-    <div class="col-lg-6">
-        <div class="p-lg-4 p-3"> 
+    <!----------------------- dish detail section -------------------------->
+    <!-- Dish Detail Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
 
-            <!-- Category -->
-            <span class="badge bg-danger mb-2">Popular Dish</span>
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Dish Details</h2>
+                <p class="text-muted">Everything you need to know about this delicious meal.</p>
+            </div>
 
-            <!-- Dish Title -->
-            <h2 class="fw-bold mb-2">Grilled Chicken Steak</h2>
+            <div class="row g-4">
 
-            <!-- Rating -->
-            <div class="d-flex align-items-center mb-3">
-                <div class="text-warning me-2">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
+                <!-- Full Description -->
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+
+                            <h4 class="fw-bold mb-3">Full Description</h4>
+
+                            <p class="text-muted">
+                                Our <strong>Grilled Chicken Salad</strong> is prepared using premium
+                                grilled chicken breast, freshly picked lettuce, cherry tomatoes,
+                                cucumber, sweet corn, red onion, black olives, parmesan cheese,
+                                and creamy avocado. It is tossed with our signature homemade
+                                lemon-herb dressing to deliver a refreshing and healthy flavor.
+                            </p>
+
+                            <p class="text-muted">
+                                This dish is perfect for lunch or dinner and provides a balanced
+                                combination of lean protein, healthy fats, vitamins, and minerals.
+                                Every ingredient is carefully selected to ensure freshness and
+                                exceptional taste in every bite.
+                            </p>
+
+                        </div>
+                    </div>
                 </div>
-                <span class="text-muted">(4.8 • 245 Reviews)</span>
+
+                <!-- Nutrition Info -->
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+
+                            <h4 class="fw-bold mb-4">Nutrition Info</h4>
+
+                            <table class="table table-borderless align-middle mb-0">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Calories</strong></td>
+                                        <td class="text-end">420 kcal</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Protein</strong></td>
+                                        <td class="text-end">35 g</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Carbohydrates</strong></td>
+                                        <td class="text-end">18 g</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Fat</strong></td>
+                                        <td class="text-end">22 g</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Fiber</strong></td>
+                                        <td class="text-end">8 g</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Sugar</strong></td>
+                                        <td class="text-end">5 g</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Sodium</strong></td>
+                                        <td class="text-end">620 mg</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Serving Size</strong></td>
+                                        <td class="text-end">350 g</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Price -->
-            <div class="mb-4">
-                <span class="fs-2 fw-bold text-danger">$18.99</span>
-                <span class="text-muted text-decoration-line-through ms-2">$22.99</span>
-            </div>
+        </div>
+    </section>
+<!------------------------ Related Dishes Section ----------------------->
+<section class="py-5 bg-light">
+    <div class="container">
 
-            <!-- Description -->
+        <!-- Section Heading -->
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Related Dishes</h2>
             <p class="text-muted">
-                Tender grilled chicken served with creamy mashed potatoes, fresh vegetables,
-                and our signature pepper sauce.
+                Explore more delicious dishes you may like.
             </p>
+        </div>
 
-            <!-- Ingredients -->
-            <div class="mb-4">
-                <h5 class="fw-semibold mb-3">
-                    <i class="fa-solid fa-utensils me-2 text-danger"></i>Ingredients
-                </h5>
+        <div class="row g-4">
 
-                <ul class="list-unstyled">
-                    <li class="mb-2">
-                        <i class="fa-solid fa-check text-success me-2"></i>Grilled Chicken Breast
-                    </li>
-                    <li class="mb-2">
-                        <i class="fa-solid fa-check text-success me-2"></i>Mashed Potatoes
-                    </li>
-                    <li class="mb-2">
-                        <i class="fa-solid fa-check text-success me-2"></i>Steamed Vegetables
-                    </li>
-                    <li class="mb-2">
-                        <i class="fa-solid fa-check text-success me-2"></i>Pepper Sauce
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-check text-success me-2"></i>Fresh Herbs
-                    </li>
-                </ul>
-            </div>
+            <!-- Dish 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
 
-            <!-- Quantity Selector -->
-            <div class="mb-4">
-                <label class="form-label fw-semibold">Quantity</label>
+                    <img src="asset/img/Chicken Burger.jpg"
+                         class="card-img-top"
+                         style="height:220px; object-fit:cover;"
+                         alt="Dish">
 
-                <div class="input-group" style="max-width: 160px;">
-                    <button class="btn btn-outline-secondary" onclick="decreaseQty()">
-                        <i class="fa-solid fa-minus"></i>
-                    </button>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="fw-bold">Chicken Burger</h5>
+                            <span class="text-danger fw-bold">$12.99</span>
+                        </div>
 
-                    <input type="text" id="quantity" class="form-control text-center" value="1" readonly>
+                        <p class="text-muted">
+                            <i class="fa-solid fa-burger text-warning me-2"></i>
+                            Crispy chicken, cheese, lettuce and special sauce.
+                        </p>
 
-                    <button class="btn btn-outline-secondary" onclick="increaseQty()">
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
+                        <button class="btn btn-danger w-100">
+                            <i class="fa-solid fa-cart-shopping me-2"></i>
+                            Order Now
+                        </button>
+                    </div>
+
                 </div>
             </div>
 
-            <!-- Buttons -->
-            <div class="d-grid gap-3">
-                <button class="btn btn-danger btn-lg">
-                    <i class="fa-solid fa-cart-shopping me-2"></i>
-                    Order Now
-                </button>
 
-                <button class="btn btn-outline-dark">
-                    <i class="fa-regular fa-heart me-2"></i>
-                    Add to Wishlist
-                </button>
+            <!-- Dish 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+
+                    <img src="asset/img/Seafood Platter.jpg"
+                         class="card-img-top"
+                         style="height:220px; object-fit:cover;"
+                         alt="Dish">
+
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="fw-bold">Seafood Pasta</h5>
+                            <span class="text-danger fw-bold">$16.50</span>
+                        </div>
+
+                        <p class="text-muted">
+                            <i class="fa-solid fa-fish text-primary me-2"></i>
+                            Fresh seafood, pasta, herbs and creamy sauce.
+                        </p>
+
+                        <button class="btn btn-danger w-100">
+                            <i class="fa-solid fa-cart-shopping me-2"></i>
+                            Order Now
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Dish 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100">
+
+                    <img src="asset/img/"
+                         class="card-img-top"
+                         style="height:220px; object-fit:cover;"
+                         alt="Dish">
+
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="fw-bold">Vegetable Pizza</h5>
+                            <span class="text-danger fw-bold">$13.99</span>
+                        </div>
+
+                        <p class="text-muted">
+                            <i class="fa-solid fa-pizza-slice text-danger me-2"></i>
+                            Fresh vegetables, mozzarella cheese and tomato sauce.
+                        </p>
+
+                        <button class="btn btn-danger w-100">
+                            <i class="fa-solid fa-cart-shopping me-2"></i>
+                            Order Now
+                        </button>
+                    </div>
+
+                </div>
             </div>
 
         </div>
