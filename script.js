@@ -1,3 +1,4 @@
+// dish info quantity selector
 document.querySelectorAll('.input-group').forEach(group => {
     const minus = group.querySelector('.btn:first-child');
     const plus = group.querySelector('.btn:last-child');
@@ -15,3 +16,10 @@ document.querySelectorAll('.input-group').forEach(group => {
         input.value = value + 1;
     });
 });
+
+// reservation confirmation popup
+document.getElementById('reservationForm')?.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const modal = new bootstrap.Modal(document.getElementById('reservationConfirmation'));
+            modal.show();
+        });

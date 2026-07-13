@@ -51,8 +51,9 @@
     <!-- navigation section -->
     <nav class="navbar navbar-expand-lg bg-info sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold text-dark pb-2" style="font-size: xx-large;" href="home.html"><i
-                    class="fa-solid fa-bowl-rice" style="color: rgb(255, 255, 255); font-size: 50px;"></i>Delicious Bites</a>
+            <a class="navbar-brand fw-bold text-dark pb-2" style="font-size: xx-large;" href="#"><i
+                    class="fa-solid fa-bowl-rice" style="color: rgb(255, 255, 255); font-size: 50px;"></i>Delicious
+                Bites</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -70,7 +71,8 @@
                         <a class="nav-link" href="dish detail.html">Dish Detail</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" style="font-weight: 900;" aria-current="page" href="reservation.html">Reservation</a>
+                        <a class="nav-link active" style="font-weight: 900;" aria-current="page"
+                            href="reservation.html">Reservation</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="signup.html">Sign Up</a>
@@ -111,7 +113,7 @@
                             </div>
 
                             <!-- Reservation Form -->
-                            <form>
+                            <form id="reservationForm">
 
                                 <div class="row">
                                     <!-- Name -->
@@ -187,72 +189,86 @@
             </div>
         </div>
     </section>
-<!--------------------- Reservation Confirmation Modal --------------------->
-<div class="modal fade" id="reservationConfirmation" tabindex="-1" aria-labelledby="reservationConfirmationLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-
-      <div class="modal-header bg-success text-white">
-        <h5 class="modal-title" id="reservationConfirmationLabel">
-          Reservation Confirmed
-        </h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <div class="modal-body">
-        <div class="text-center mb-3">
-          <i class="bi bi-check-circle-fill text-success" style="font-size: 3rem;"></i>
-        </div>
-
-        <h5 class="text-center mb-3">Thank you for your reservation!</h5>
-
-        <table class="table table-bordered">
-          <tbody>
-            <tr>
-              <th>Reservation ID</th>
-              <td>#RSV10245</td>
-            </tr>
-            <tr>
-              <th>Name</th>
-              <td>John Doe</td>
-            </tr>
-            <tr>
-              <th>Date</th>
-              <td>August 15, 2026</td>
-            </tr>
-            <tr>
-              <th>Time</th>
-              <td>7:30 PM</td>
-            </tr>
-            <tr>
-              <th>Guests</th>
-              <td>4</td>
-            </tr>
-            <tr>
-              <th>Table</th>
-              <td>Window Seat</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="alert alert-info mb-0">
-          A confirmation email has been sent to your registered email address.
-        </div>
-      </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
-          Done
-        </button>
-      </div>
-
+    <!--------------------- Reservation Confirmation Modal --------------------->
+    <!-- Section Heading -->
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Related Dishes</h2>
+        <p class="text-muted">
+            Explore more delicious dishes you may like.
+        </p>
     </div>
-  </div>
-</div>
+
+    <div class="modal fade" id="reservationConfirmation" tabindex="-1" aria-labelledby="reservationConfirmationLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="reservationConfirmationLabel">
+                        Reservation Confirmed
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="text-center mb-3">
+                        <i class="bi bi-check-circle-fill text-success" style="font-size: 3rem;"></i>
+                    </div>
+
+                    <h5 class="text-center mb-3">Thank you for your reservation!</h5>
+
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th>Reservation ID</th>
+                                <td>#RSV10245</td>
+                            </tr>
+                            <tr>
+                                <th>Name</th>
+                                <td>Tanjila Islam</td>
+                            </tr>
+                            <tr>
+                                <th>Date</th>
+                                <td>August 15, 2026</td>
+                            </tr>
+                            <tr>
+                                <th>Time</th>
+                                <td>7:30 PM</td>
+                            </tr>
+                            <tr>
+                                <th>Guests</th>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <th>Table</th>
+                                <td>Window Seat</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="alert alert-info mb-0">
+                        A confirmation email has been sent to your registered email address.
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                        Done
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 
 
+
+
+
+    
 
 
 
@@ -400,6 +416,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- JavaScript file link -->
+    <script src="script.js"></script>
 </body>
 
 </html>
