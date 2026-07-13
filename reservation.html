@@ -64,14 +64,13 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" style="font-weight: 900;" aria-current="page"
-                            href="menu.html">Menu</a>
+                        <a class="nav-link" href="menu.html">Menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="dish detail.html">Dish Detail</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="reservation.html">Reservation</a>
+                        <a class="nav-link active" style="font-weight: 900;" aria-current="page" href="reservation.html">Reservation</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="signup.html">Sign Up</a>
@@ -90,7 +89,7 @@
             <li class="breadcrumb-item active" aria-current="page">Reservation</li>
         </ol>
     </nav>
-    <!-- Reservation Section -->
+    <!---------------------- Reservation Section ---------------------->
     <section class="py-5 bg-light">
         <div class="container">
             <div class="row justify-content-center">
@@ -188,7 +187,68 @@
             </div>
         </div>
     </section>
+<!--------------------- Reservation Confirmation Modal --------------------->
+<div class="modal fade" id="reservationConfirmation" tabindex="-1" aria-labelledby="reservationConfirmationLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
 
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="reservationConfirmationLabel">
+          Reservation Confirmed
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="text-center mb-3">
+          <i class="bi bi-check-circle-fill text-success" style="font-size: 3rem;"></i>
+        </div>
+
+        <h5 class="text-center mb-3">Thank you for your reservation!</h5>
+
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th>Reservation ID</th>
+              <td>#RSV10245</td>
+            </tr>
+            <tr>
+              <th>Name</th>
+              <td>John Doe</td>
+            </tr>
+            <tr>
+              <th>Date</th>
+              <td>August 15, 2026</td>
+            </tr>
+            <tr>
+              <th>Time</th>
+              <td>7:30 PM</td>
+            </tr>
+            <tr>
+              <th>Guests</th>
+              <td>4</td>
+            </tr>
+            <tr>
+              <th>Table</th>
+              <td>Window Seat</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="alert alert-info mb-0">
+          A confirmation email has been sent to your registered email address.
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+          Done
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 
 
