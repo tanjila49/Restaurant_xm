@@ -1,0 +1,1 @@
+This is a simple restaurant website designed for browsing dishes, reserving tables, and managing user acconts. It provides an easy and user-friendly experience for customers to explore the menu and place booking online.
